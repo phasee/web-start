@@ -1,5 +1,4 @@
 # web-start
-<<<<<<< HEAD
 
 ## Project setup
 ```
@@ -25,4 +24,3 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 =======
 A starting point for Vue SPA including Vuetify, Router, Store, Firebase Firestore and Firebase Auth
->>>>>>> 8e8b689bda60bf21bc9dd87287260157c002a869
