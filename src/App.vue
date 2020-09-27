@@ -19,26 +19,13 @@
             :to="{ name: 'Home'}"
             class="white--text site-title"
           >
-            Giggity
+            Web Start
           </router-link>
         </v-toolbar-title>
       </div>
 
       <v-spacer></v-spacer>
-      <v-row v-if="isLoggedIn">
-        <v-spacer></v-spacer>
-        <v-col cols="auto">
-          <Cart />
-        </v-col>
-        <v-col cols="auto">
-          <v-btn
-            tag="a"
-            text
-            @click.prevent="logout"
-          >Logout</v-btn>
-        </v-col>
-      </v-row>
-      <div v-else>
+      <div>
         <router-link
           :to="{ name: 'Login' }"
           class="white--text app-bar-link`"
@@ -59,11 +46,10 @@
 import { mapActions, mapState, mapGetters } from 'vuex'
 
 import MessageDialog from '@/components/framework/MessageDialog'
-import Cart from '@/components/cart/Cart'
 
 export default {
   name: 'App',
-  components: { MessageDialog, Cart },
+  components: { MessageDialog },
   data: () => ({
     ...mapState('auth', ['currentUser'])
   }),
