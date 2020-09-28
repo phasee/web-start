@@ -25,7 +25,14 @@
       </div>
 
       <v-spacer></v-spacer>
-      <div>
+      <div v-if="isLoggedIn">
+        <v-btn
+          @click.prevent="logout"
+          class="white--text app-bar-link`"
+          tag="a"
+        >Logout</v-btn>
+      </div>
+      <div v-else>
         <router-link
           :to="{ name: 'Login' }"
           class="white--text app-bar-link`"

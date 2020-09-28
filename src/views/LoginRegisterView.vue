@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <LoginRegisterFormCard :isLogin="isLogin" />
-  </div>
+  <LoginRegisterFormCard :isLogin="isLogin" />
 </template>
 
 <script>
